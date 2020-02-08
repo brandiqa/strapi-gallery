@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "images": {
+      "via": "tags",
+      "collection": "image"
+    }
+  }
+}
